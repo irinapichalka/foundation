@@ -16,31 +16,103 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <div class="page">
-      <header class="header">
-        <div class="logo">
-          <img
-            class="logo__image"
-            src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/icon.png"
-            alt="Logo"
-          />
-          <div>
-            <span class="logo__name">Foundation</span>
-            <span class="logo__description">Startup landing template</span>
+      <div class="top-section">
+        <header class="header">
+          <div class="logo">
+            <img
+              class="logo__image"
+              src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/icon.png"
+              alt="Logo"
+            />
+            <div class="logo__text">
+              <div class="logo__name">Foundation</div>
+              <div class="logo__description">Startup landing template</div>
+            </div>
+          </div>
+          <nav class="navigation">
+            <a href="#" class="navigation__item navigation__item_selected"
+              >Home</a
+            >
+            <a href="#" class="navigation__item">Stories</a>
+            <a href="#" class="navigation__item">
+              Library <i class="navigation__arrow"></i></a>
+          </nav>
+          <button class="header__button">Get started</button>
+        </header>
+        <section></section>
+      </div>
+      <footer class="footer">
+        <div class="footer-navigation">
+          <div class="about-company">
+            <div class="logo">
+              <img
+                class="logo__image"
+                src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/icon-dark.png"
+                alt="Logo"
+              />
+              <div class="logo__text">
+                <div class="logo__name">Foundation</div>
+                <div class="logo__description">Startup landing template</div>
+              </div>
+            </div>
+            <p class="footer__description"> Foundation is a website template for startaps and small teams. It helps to built a website in no time.</p>
+            <div class="downloads">
+              <img class="downloads__item" src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/app-store.png" alt="Apple Store">
+              <img src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/google-play.png" alt="Google Play">
+            </div>
+            
+
+          </div>
+          <div class="additional-navigation">
+              <div class="additional-navigation__column nav-links">
+                <h3 class="nav-links__title">Product</h3>
+                <ul class="nav-links__list">
+                  <li class="nav-links__list-item">Acquire Users</li>
+                  <li class="nav-links__list-item">Content Marketing</li>
+                  <li class="nav-links__list-item">Website Templates</li>
+                  <li class="nav-links__list-item">Customer Management</li>
+                  <li class="nav-links__list-item">Virtual Inbox</li>
+
+                </ul>
+              </div>
+              <div class="nav-links">
+                <h3 class="nav-links__title">Company</h3>
+                <ul class="nav-links__list">
+                  <li class="nav-links__list-item">About Foundation</li>
+                  <li class="nav-links__list-item">Brand Guidelines</li>
+                  <li class="nav-links__list-item">Press Kit</li>
+                  <li class="nav-links__list-item">Support</li>
+
+                </ul>
+              </div>
           </div>
         </div>
-        <nav class="navigation">
-          <ul class="nav-list">
-            <li class="nav-list__item nav-list__item_selected">Home</li>
-            <li class="nav-list__item">Stories</li>
-            <li class="nav-list__item">Library</li>
-          </ul>
-        </nav>
-        <button class="header__button">Get started</button>
-      </header>
+        <div class="footer__line"></div>
+        <div class="footer-links">
+          <nav class="terms">
+            <a href="#" class="terms__item">Terms</a>
+            <a href="#" class="terms__item">Privacy</a>
+            <a href="#" class="terms__item">License</a>
+          </nav>
+          <div class="social-links">
+            <a class="social-links__item" href="#">
+              <img src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/social-twitter.png" alt="Twitter">
+            </a>
+            <a class="social-links__item" href="#">
+              <img src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/social-fb.png" alt="Facebook">
+            </a>
+            <a class="social-links__item" href="#">
+              <img src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/social-linkedIn.png" alt="LinkedIn">
+            </a>
+          </div>
+        </div>
+        
+
+      </footer>
     </div>
   </body>
 </html>

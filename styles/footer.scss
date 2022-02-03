@@ -1,0 +1,102 @@
+.footer{
+    display: flex;
+    flex-direction: column;
+    margin-top: auto;
+
+    &__description{
+        line-height: 26px;
+        font-size: 18px;
+        width:360px;
+        margin-top: 26px;
+        color: rgba(43,41,45,0.6);
+
+    }
+
+    &-navigation{
+        width:1140px;
+        height: 338px;
+        margin:0 auto;
+        display: flex;
+        
+    }
+
+    &-links{
+        height: 50px;
+        width:1140px;
+        margin:0 auto;
+        display: flex;
+        align-items: center;
+    }
+    &__line{
+        border-top: 1px solid #2b292d;
+        opacity: 0.1;
+        width: 100%;
+        margin:0;
+    }
+}
+.terms{
+    line-height: 50px;
+    font-size: 14px;
+
+    &__item{
+        color: rgba(43,41,45,0.6);
+        text-decoration: none;
+        margin-right: 22px;
+
+    }
+}
+.social-links{
+    margin-left: auto;
+
+    &__item{
+        margin-left: 20px;
+    }
+}
+.downloads{
+    margin-top: 25px;
+
+    &__item{
+        margin-right: 10px;
+
+
+    }
+}
+.about-company{
+    margin-top: 44px;
+
+}
+.additional-navigation{
+    margin-top: 60px;
+    margin-left: auto;
+    display: flex;
+
+    &__column{
+        margin-right: 29px; /*not for responsive*/
+
+    }
+
+}
+
+.nav-links{
+    width: 265px;
+
+    &__title{
+        font-weight: bold;
+        font-size: 22px;
+        line-height: 28px;
+        color: #2b292d;
+        margin:0;
+
+    }
+    &__list{
+        list-style-type: none;
+        color: rgba(43,41,45,0.6);
+        padding: 0;
+        margin: 0;
+        margin-top: 18px;
+        font-size: 22px;
+        line-height: 28px;
+        
+
+    }
+}

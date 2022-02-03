@@ -1,8 +1,20 @@
 @import 'header.scss';
-*{
-    box-sizing: border-box;
+@import 'footer.scss';
+* {
+  box-sizing: border-box;
 }
-.page{
-    width: 1400px;
-    margin: auto;
+html {
+  font-size: 16px;
+  font-family: "Work Sans", sans-serif;
+}
+.page {
+  width: 1400px;
+  margin: auto;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.top-section {
+  padding-top: 39px;
+  background-color: #f3c6bd;
 }
