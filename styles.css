@@ -1,3 +1,26 @@
+.header {
+  width: 1140px;
+  height: 62px;
+  margin: auto;
+  display: flex;
+}
 
+.navigation {
+  margin-left: auto;
+}
+
+.logo__image {
+  width: 60px;
+  height: 60px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.page {
+  width: 1400px;
+  margin: auto;
+}
 
 /*# sourceMappingURL=styles.css.map */
