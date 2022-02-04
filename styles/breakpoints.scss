@@ -7,8 +7,7 @@
 }
 @mixin for-large-down {
     @media screen and (max-width: 399px) {
-        @content;
-        
+        @content;  
     }
     
 }

@@ -1,5 +1,10 @@
 .top-section {
   background-color: #f3c6bd;
+
+  @include for-large-up {
+    padding-top: 39px;
+    background-color: #f3c6bd;
+  }
 }
 .header {
   height: 64px;
@@ -9,8 +14,20 @@
   align-items: center;
   padding-left: 15px;
 
+  @include for-large-up {
+    display: flex;
+    background: transparent;
+    margin: auto;
+    width: 1140px;
+    height: 62px;
+  }
+
   &__button {
     display: none;
+
+    @include for-large-up {
+      display: block;
+    }
   }
   &__menu-button {
     width: 58px;
@@ -19,6 +36,10 @@
     border-left: 1px solid #00000026;
     margin-left: auto;
     background: transparent;
+
+    @include for-large-up {
+      display: none;
+    }
   }
   &__menu-icon {
     width: 18px;
@@ -26,9 +47,24 @@
     background-image: url("https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/icon-hamburger.png");
     display: inline-block;
   }
+
+  .logo__description {
+    display: none;
+
+    @include for-large-up {
+      display: block;
+    }
+  }
 }
 .navigation {
   display: none;
+
+  @include for-large-up {
+    display: block;
+    margin-left: auto;
+    margin-top: 7px;
+    margin-right: 75px;
+  }
 
   &__item {
     color: #2b292d;
@@ -53,11 +89,19 @@
 }
 .logo {
   display: flex;
+
   &__image {
     width: 48px;
     height: 48px;
     margin-right: 13px;
+
+    @include for-large-up {
+      width: 60px;
+      height: 60px;
+      margin-right: 15px;
+    }
   }
+
   &__name {
     font-size: 20px;
     line-height: 25px;
@@ -70,47 +114,11 @@
     justify-content: center;
   }
   &__description {
-    display: none;
-  }
-}
-
-@include for-large-up {
-  .top-section {
-    padding-top: 39px;
-    background-color: #f3c6bd;
-  }
-  .header {
-    display: flex;
-    background-color: #f3c6bd;
-    margin: auto;
-    width: 1140px;
-    height: 62px;
-
-    &__button {
-      display: block;
-    }
-    &__menu-button {
-      display: none;
-    }
-  }
-  .logo {
-    &__image {
-      width: 60px;
-      height: 60px;
-      margin-right: 15px;
-    }
-    &__description {
+    @include for-large-up {
       font-size: 18px;
       line-height: 25px;
       color: #2b292d;
       opacity: 0.6;
     }
-  }
-
-  .navigation {
-    display: block;
-    margin-left: auto;
-    margin-top: 7px;
-    margin-right: 75px;
   }
 }
