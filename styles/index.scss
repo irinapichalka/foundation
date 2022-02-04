@@ -1,9 +1,9 @@
 @import 'variables.scss';
+@import 'common.scss';
 @import 'breakpoints.scss';
 @import 'header.scss';
 @import 'footer.scss';
 @import 'headline.scss';
-@import 'common.scss';
 @import 'order.scss';
 
 * {
@@ -27,7 +27,4 @@ html {
 
   }
 }
-.top-section {
-  padding-top: 39px;
-  background-color: #f3c6bd;
-}
+
