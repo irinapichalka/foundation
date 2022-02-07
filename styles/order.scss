@@ -1,4 +1,7 @@
 .order{
+    
+    padding: 50px 15px;
+    background-color: $color-light;
 
     @include for-large-up{
         padding: 73px 0 72px 0;
@@ -7,9 +10,9 @@
         align-items: flex-start;
     }
 
-    padding: 50px 15px;
-    background-color: $color-light;
-
+    &__details{
+        max-width: 550px;
+    }
     
     
     &__illustration{
@@ -21,11 +24,7 @@
         }
 
     }
-    &__details{
-        max-width: 550px;
-        
-
-    }
+    
 
     &__title{
         font-weight: 700;

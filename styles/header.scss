@@ -11,8 +11,8 @@
   width: 100%;
   background-color: #fff;
   display: flex;
-  align-items: center;
   padding-left: 15px;
+  align-items: center;
 
   @include for-large-up {
     display: flex;
@@ -20,6 +20,8 @@
     margin: auto;
     width: 1140px;
     height: 62px;
+    padding-left: 0;
+    align-items: normal;
   }
 
   &__button {
@@ -117,7 +119,7 @@
     @include for-large-up {
       font-size: 18px;
       line-height: 25px;
-      color: #2b292d;
+      color: $text-color-dark;
       opacity: 0.6;
     }
   }

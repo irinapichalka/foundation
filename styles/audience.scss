@@ -1,0 +1,128 @@
+.audience {
+  background-color: $color-light-blue;
+
+  @include for-large-up {
+    width: 1400px;
+    height: 983px;
+    padding-top: 108px;
+    padding-bottom: 110px;
+  }
+
+  &__information {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &_link {
+      text-align: center;
+      color: $text-color-dark;
+
+      @include for-large-up {
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 34px;
+      }
+    }
+    &_title {
+      display: block;
+      width: 555px;
+      height: 112px;
+      font-weight: 700;
+      font-size: 56px;
+      line-height: 56px;
+      text-align: center;
+      letter-spacing: -0.5px;
+      margin-top: 24px;
+      margin-bottom: 0;
+    }
+    &_description {
+      display: block;
+      width: 555px;
+      height: 72px;
+      font-size: 24px;
+      line-height: 34px;
+      text-align: center;
+      margin-top: 30px;
+    }
+  }
+  &__actions {
+    margin-top: 34px;
+    &-learn-more-btn {
+      color: #3040c4;
+      background-color: #fff;
+      width: 158px;
+      height: 48px;
+      font-size: 18px;
+      font-weight: 700;
+      border: none;
+      border-radius: 2px;
+      margin-top: 15px;
+    }
+  }
+}
+.categories {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  @include for-large-up {
+    flex-direction: row;
+    margin-top: 111px;
+    margin-bottom: 110px;
+  }
+
+  &__item {
+    width: 262px;
+    height: 300px;
+    margin-right: 30px;
+    display: flex;
+    flex-direction: column;
+    color: $text-color-dark;
+    background: linear-gradient(
+        180deg,
+        rgba(255, 255, 255, 0.05) 0%,
+        rgba(255, 255, 255, 1e-5) 100%
+      ),
+      #ffffff;
+    background-blend-mode: overlay, normal;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 4px 6px rgba(0, 0, 0, 0.05),
+      inset 0px 1px 0px rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+
+    &:hover {
+      background: $color-dark-blue;
+      color: white;
+      box-shadow: 0px 13px 18px rgba(0, 0, 0, 0.15),
+        0px 11px 55px rgba(0, 0, 0, 0.07);
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+    &_image {
+      margin: 22px auto;
+      height: 195px;
+    }
+    &_name {
+      font-weight: 700;
+      font-size: 22px;
+      line-height: 28px;
+      text-align: center;
+      margin-bottom: 33px;
+    }
+  }
+}
+
+.image-developers {
+  width: 138px;
+}
+.image-entertainment {
+  width: 142px;
+}
+.image-athlets {
+  width: 160px;
+}
+.image-creators {
+  width: 119px;
+}
