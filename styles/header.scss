@@ -1,15 +1,15 @@
 .top-section {
-  background-color: #f3c6bd;
+  background-color: $color-light-pink;
 
   @include for-large-up {
     padding-top: 39px;
-    background-color: #f3c6bd;
+    background-color: $color-light-pink;
   }
 }
 .header {
   height: 64px;
   width: 100%;
-  background-color: #fff;
+  background-color: $color-white;
   display: flex;
   padding-left: 15px;
   align-items: center;
@@ -69,7 +69,7 @@
   }
 
   &__item {
-    color: #2b292d;
+    color: $text-color-dark;
     text-decoration: none;
     line-height: 25px;
     font-size: 18px;

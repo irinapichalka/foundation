@@ -51,7 +51,7 @@
   }
 
   &__line {
-    border-top: 1px solid #2b292d;
+    border-top: 1px solid $color-dark;
     opacity: 0.1;
     width: 100%;
     margin: 0;
@@ -149,7 +149,7 @@
     font-weight: bold;
     font-size: 22px;
     line-height: 28px;
-    color: #2b292d;
+    color: $text-color-dark;
     margin: 0;
   }
 
